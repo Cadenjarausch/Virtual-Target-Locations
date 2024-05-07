@@ -136,11 +136,6 @@ x_traj_left, y_traj_left, x_traj_right, y_traj_right = simulate_until_boundary(v
 # Check reachable targets
 reachable_targets = can_reach_targets(x_traj_right, y_traj_right, x_traj_left, y_traj_left, targets_x, targets_y, vel, dT, initial_yaw)
 
-print("X Trajectory Left:\n", x_traj_left)
-print("Y Trajectory Left:\n", y_traj_left)
-print("X Trajectory Right:\n", x_traj_right)
-print("Y Trajectory Right:\n", y_traj_right)
-
 print(reachable_targets)
 
 # Plot trajectories and reachable targets
